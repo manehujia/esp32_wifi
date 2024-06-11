@@ -21,11 +21,11 @@ void setup()
 void loop() 
 {
   b = WiFi.softAPgetStationNum();
-  oled.setCursor(0,40); 
+  oled.setCursor(0,0); 
   oled.printf("b:%d",b);
-      oled.setCursor(0,0); 
-    oled.printf("%s",WiFi.softAPSSID());
     oled.setCursor(0,10); 
+    oled.printf("%s",WiFi.softAPSSID());
+    oled.setCursor(0,20); 
     uint32_t d=WiFi.softAPIP();
     oled.printf("%d",d);
   //i++;
