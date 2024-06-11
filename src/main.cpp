@@ -40,6 +40,6 @@ void loop()
   oled.setCursor(0, 40);
 
   oled.display();
-  delay(10);
+  delay(20);
   oled.clearDisplay();
 }
